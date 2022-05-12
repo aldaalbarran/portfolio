@@ -284,3 +284,81 @@ section{
     color: var(--black__dark);
     text-shadow: var(--border__text-orange);
 }
+
+/* ======================================== CONTACT ======================================== */
+.contact__content{
+    margin-top: 5rem;
+}
+.contact__content p{
+    color: var(--white);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.contact__content .row div{
+    position: relative;
+}
+
+.contact__content .row div a{
+    margin: auto;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 150px;
+    background-color: var(--black);
+    color: var(--black__light);
+    font-size: 3rem;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.contact__content .row div:hover a{
+    border: 5px solid var(--color);
+    color: var(--color);
+}
+
+.contact__content .row div a i{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.contact__content .row div a:hover i{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+.contact__content .row div span{
+    position: absolute;
+    bottom: 25px;
+    right: -10px;
+    color: var(--black__light);
+    font-family: var(--txt__title);
+    font-size: 1.5rem;
+    transform: translate(-25px, 10px);
+    -webkit-transform: translate(-25px, 10px);
+    -moz-transform: translate(-25px, 10px);
+    -ms-transform: translate(-25px, 10px);
+    -o-transform: translate(-25px, 10px);
+}
+
+.contact__content .row div:hover span{
+    color: var(--white);
+}
+
+
+/* ======================================== ANIMATIONS ======================================== */
+/*@keyframes bg__contact-circle {
+    0% { background: radial-gradient(circle, rgba(240,80,25,1) 0%, rgba(240,80,25,1) 10%, rgba(25,25,25,1) 10%, rgba(25,25,25,1) 100%);}
+    50%{background: radial-gradient(circle, rgba(240,80,25,1) 0%, rgba(240,80,25,1) 50%, rgba(25,25,25,1) 50%, rgba(25,25,25,1) 100%);}
+    100% { background: radial-gradient(circle, rgba(240,80,25,1) 0%, rgba(240,80,25,1) 100%);}
+}
+*/
