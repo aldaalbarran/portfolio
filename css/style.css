@@ -53,6 +53,10 @@ body{
     height: 100vh;
 }
 
+section{
+    z-index: 1;
+}
+
 .about, .skills, .projects, .contact{
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -88,7 +92,31 @@ body{
     -o-transform: translate(-50%, -50%);
 }
 
+/* ======================================== SCROLLBAR ======================================== */
+@-moz-document url-prefix() {
+	html{
+	scrollbar-width: none;
+	}
+}
+
+::-webkit-scrollbar{
+	width: 0;
+}
+
+.progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: var(--color);
+    z-index: 3;
+}
+
 /* ======================================== MENU ======================================== */
+.menu{
+    z-index: 2;
+}
+
 .navbar-brand span{
     color: var(--color);
     font-weight: 600;

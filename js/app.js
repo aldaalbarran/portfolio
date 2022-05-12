@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+/* ======================================== PROGRESSBAR ======================================== */
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+    scrollPercent = (scroll / (dh - wh)) * 100;
+    $('#progressbar').css('height', scrollPercent + '%');
+});
 
 /* ======================================== SKILLS ======================================== */
 $(function () {
@@ -52,7 +60,6 @@ $(function () {
         indice == 7 ? $("#imgMySQL").addClass(" active") : $("#imgMySQL").removeClass(" active");
         indice == 8 ? $("#imgGit").addClass(" active") : $("#imgGit").removeClass(" active");
         indice == 9 ? $("#imgGitHub").addClass(" active") : $("#imgGitHub").removeClass(" active");
-
 
         maquina2(contenedor, listaTexto[indice], intervalo, listaTexto, indice);
     }
