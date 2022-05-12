@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldair Albarran | Desarrollador Web</title>
+    <link rel="shortcut icon" href="./img/dev.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="menu navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span><</span>
+                aldaalbarran
+                <span>/></span>
+            </a>
+            <!--
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            -->
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul id="menu" class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#home"> ¡Hola! </a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#about"> Sobre mí </a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#skills"> Habilidades </a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#projects"> Proyectos </a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#contact"> Contacto </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main" class="main">
+        <section id="home" class="home position-relative">
+            <div class="row">
+                <div class="home__left col-md-6 centerY">
+                    <p>¡Hola! Mi nombre es</p>
+                    <h1>ALDAIR <br> ALBARRAN</h1>
+                    <p>y soy</p>
+                    <h5>Desarrollador Web</h5>
+                </div>
+                <div class="home__right col-md-6 centerXY">
+                    <div class="home__avatar">
+                        <div class="circle"></div>
+                        <img src="./img/avatar.png" alt="avatar" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="about" class="about position-relative">
+                <h1 class="section__title">SOBRE MÍ</h1>
+                <h2 class="section__subTitle">sobre mí</h2>
+
+                <div class="row about__content">
+                    <div class="about__left col-md-6 centerXY">
+                        <img src="./img/about.svg" alt="about">
+                    </div>
+                    <div class="about__right col-md-6 centerY">
+                        <p class="title">Mi nombre es Aldair Albarran, soy recién egresado de <span>Ingeniería en Sistemas Computacionales</span> y apasionado por el desarrollo web,</p>
+                        <p class="text">Actualmente recido en Toluca, México; cuento con un año de experiencia en el campo.</p>
+                        <p class="text">Siempre en busca de desarrollar sitios y sistemas web que ayuden a convertir ideas en productos significativos y útiles.</p>
+                        <a href="./doc/CV - Aldair Camacho Albarran.pdf" download class="download-cv btn m-auto">Descargar CV</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills position-relative">
+                <h1 class="section__title">HABILIDADES</h1>
+                <h2 class="section__subTitle">habilidades</h2>
+
+                <div class="skills__content text-center">
+                    <h5 class="txt-language"><span id="typer"></span><span class="txt-bar">|</h5>
+                        <div class="div-languages" id="languajes">
+                            <span id="imgHTML5" class="img-language"><i class="fab fa-html5"></i></span>
+                            <span id="imgCSS3" class="img-language"><i class="fab fa-css3-alt"></i></span>
+                            <span id="imgBootstrap" class="img-language"><i class="fab fa-bootstrap"></i></span>
+                            <span id="imgJavaScript" class="img-language"><i class="fab fa-js"></i></span>
+                            <span id="imgVuejs" class="img-language"><i class="fab fa-vuejs"></i></span>
+                            <span id="imgPHP" class="img-language"><i class="fab fa-php"></i></span>
+                            <span id="imgLaravel" class="img-language"><i class="fab fa-laravel"></i></span>
+                            <span id="imgMySQL" class="img-language"><i class="fas fa-database"></i></span>
+                            <span id="imgGit" class="img-language"><i class="fab fa-git-alt"></i></span>
+                            <span id="imgGitHub" class="img-language"><i class="fab fa-github"></i></span>
+                        </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects position-relative">
+                <h1 class="section__title">PROYECTOS</h1>
+                <h2 class="section__subTitle">proyectos</h2>
+            </section>
+
+            <section id="contact" class="contact position-relative">
+                <h1 class="section__title">CONTACTO</h1>
+                <h2 class="section__subTitle">contacto</h2>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center text-white m-0">
+        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="link-light" href="https://github.com/aldaalbarran" target="_blank">@aldaalbarran</a>
+        </div>
+      </footer>
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
