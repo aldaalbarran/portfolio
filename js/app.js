@@ -36,7 +36,7 @@ $(function () {
         "CSS3",
         "Bootstrap",
         "JavaScript",
-        "Vue.js",
+        "Vuejs",
         "PHP",
         "Laravel",
         "MySQL",
@@ -50,16 +50,9 @@ $(function () {
             indice = 0;
         }
 
-        indice == 0 ? $("#imgHTML5").addClass(" active") : $("#imgHTML5").removeClass(" active");
-        indice == 1 ? $("#imgCSS3").addClass(" active") : $("#imgCSS3").removeClass(" active");
-        indice == 2 ? $("#imgBootstrap").addClass(" active") : $("#imgBootstrap").removeClass(" active");
-        indice == 3 ? $("#imgJavaScript").addClass(" active") : $("#imgJavaScript").removeClass(" active");
-        indice == 4 ? $("#imgVuejs").addClass(" active") : $("#imgVuejs").removeClass(" active");
-        indice == 5 ? $("#imgPHP").addClass(" active") : $("#imgPHP").removeClass(" active");
-        indice == 6 ? $("#imgLaravel").addClass(" active") : $("#imgLaravel").removeClass(" active");
-        indice == 7 ? $("#imgMySQL").addClass(" active") : $("#imgMySQL").removeClass(" active");
-        indice == 8 ? $("#imgGit").addClass(" active") : $("#imgGit").removeClass(" active");
-        indice == 9 ? $("#imgGitHub").addClass(" active") : $("#imgGitHub").removeClass(" active");
+        for (let i = 0; i < listaTexto.length; i++) {
+            indice == i ? $("#img"+listaTexto[i]).addClass(" active") : $("#img"+listaTexto[i]).removeClass(" active");
+        }
 
         maquina2(contenedor, listaTexto[indice], intervalo, listaTexto, indice);
     }
@@ -70,7 +63,7 @@ $(function () {
         timer = setInterval(function () {
             if (indiceTexto == texto.length && finalTexto == false) {
                 setTimeout(function () {
-                    finalTexto = true;
+                    finalTexto = true; 
                 }, 1000);
             }
 
