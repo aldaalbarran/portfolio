@@ -36,7 +36,7 @@ $(function () {
         "CSS3",
         "Bootstrap",
         "JavaScript",
-        "Vuejs",
+        "Vue.js",
         "PHP",
         "Laravel",
         "MySQL",
@@ -51,7 +51,7 @@ $(function () {
         }
 
         for (let i = 0; i < listaTexto.length; i++) {
-            indice == i ? $("#img"+listaTexto[i]).addClass(" active") : $("#img"+listaTexto[i]).removeClass(" active");
+            indice == i ? $("#img"+listaTexto[i].replace(".", "")).addClass(" active") : $("#img"+listaTexto[i].replace(".", "")).removeClass(" active");
         }
 
         maquina2(contenedor, listaTexto[indice], intervalo, listaTexto, indice);
